@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "aqsamak",
+      "name": "bershamet-elkammy",
       "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@sveltejs/adapter-cloudflare": "^7.2.8",
