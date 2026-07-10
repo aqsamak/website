@@ -2,6 +2,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 
+	import Nav from '$lib/components/nav/nav.svelte';
 	import Footer from '$lib/components/footer/footer.svelte';
 
 	let { children } = $props();
@@ -11,6 +12,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<Nav />
 {@render children()}
-
 <Footer />
