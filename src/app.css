@@ -20,6 +20,11 @@
 }
 
 @layer base {
+	html {
+		container-name: scroller;
+		container-type: scroll-state;
+	}
+
 	:root {
 		--color-primary-0: oklch(0.96 0.02 265);
 		--color-primary-100: oklch(0.92 0.04 265);
