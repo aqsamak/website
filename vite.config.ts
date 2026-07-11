@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { Features } from 'lightningcss'
 
 export default defineConfig({
 	plugins: [
@@ -12,5 +13,10 @@ export default defineConfig({
 			},
 			adapter: adapter()
 		})
-	]
+	],
+	css: {
+		lightningcss: {
+			exclude: Features.Nesting | Features.NotSelectorList | Features.DirSelector | Features.LangSelectorList | Features.IsSelector | Features.TextDecorationThicknessPercent | Features.MediaIntervalSyntax | Features.MediaRangeSyntax | Features.CustomMediaQueries | Features.ClampFunction | Features.ColorFunction | Features.OklabColors | Features.LabColors | Features.P3Colors | Features.HexAlphaColors | Features.SpaceSeparatedColorNotation | Features.FontFamilySystemUi | Features.DoublePositionGradients | Features.VendorPrefixes | Features.LogicalProperties | Features.LightDark | Features.Selectors | Features.MediaQueries | Features.Colors
+		}
+	}
 });
