@@ -133,15 +133,9 @@
 			background-color 0.2s ease,
 			color 0.2s ease,
 			box-shadow 0.2s ease,
-			transform 0.1s ease,
 			border-color 0.2s ease;
 		text-decoration: none;
 		line-height: 1.2;
-	}
-
-	button:hover,
-	.btn:hover {
-		transform: scale(1.1);
 	}
 
 	button:focus-visible,
@@ -156,16 +150,15 @@
 	.btn[disabled] {
 		opacity: 0.6;
 		cursor: not-allowed;
-		transform: none;
 	}
 
 	.btn-primary {
 		background-color: var(--color-primary-500);
-		color: light-dark(var(--color-primary-1000), var(--color-primary-0));
+		color: light-dark(var(--color-primary-0), var(--color-primary-1000));
 		border-color: transparent;
 	}
 
-	.btn-primary:hover {
+	.btn-primary:hover:not(:disabled) {
 		background-color: var(--color-primary-600);
 	}
 
@@ -179,7 +172,7 @@
 		border-color: transparent;
 	}
 
-	.btn-secondary:hover {
+	.btn-secondary:hover:not(:disabled) {
 		background-color: var(--color-secondary-600);
 	}
 
@@ -193,7 +186,7 @@
 		border: 1px solid oklch(from var(--color-button) l c h / 0.5);
 	}
 
-	.btn-ghost:hover {
+	.btn-ghost:hover:not(:disabled) {
 		background-color: var(--color-overlay);
 	}
 
