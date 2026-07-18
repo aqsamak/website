@@ -1,7 +1,7 @@
 <footer>
     <div class="links">
         <h3>روابط سريعة</h3>
-        <ul >
+        <ul>
             <li><a href="#!">الصفحة الرئيسية</a></li>
             <li><a href="#!">عنا</a></li>
             <li><a href="#!">الآراء</a></li>
@@ -49,7 +49,7 @@
         & > .social > ul {
             display: flex;
             flex-direction: row;
-            gap: var(--spacing-2)
+            gap: var(--spacing-2);
         }
     }
 </style>

@@ -1,10 +1,12 @@
 <script lang="ts">
-    import icon from "$lib/assets/favicon.svg";
+    import icon from '$lib/assets/favicon.svg';
 </script>
 
 <nav>
-    <ul >
-        <li><a href="#!" aria-label="الصفحة الرئيسية"><img src={icon} alt="شعار برشامة الكمي"></a></li>
+    <ul>
+        <li>
+            <a href="#!" aria-label="الصفحة الرئيسية"><img src={icon} alt="شعار برشامة الكمي" /></a>
+        </li>
         <li><a href="#!">عنا</a></li>
         <li><a href="#!">الآراء</a></li>
         <li><a href="#!">الأقسام</a></li>
@@ -55,7 +57,6 @@
 
     @keyframes stick-to-top {
         0% {
-            
         }
 
         100% {
