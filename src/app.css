@@ -23,6 +23,8 @@
     html {
         container-name: scroller;
         container-type: scroll-state;
+
+        font-family: Alexandria, system-ui, sans-serif;
     }
 
     :root {
