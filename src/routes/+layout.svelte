@@ -5,7 +5,7 @@
     import Nav from '$lib/components/nav/nav.svelte';
     import Footer from '$lib/components/footer/footer.svelte';
 
-    let { children } = $props();
+    let { children, data } = $props();
 </script>
 
 <svelte:head>
@@ -15,6 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 </svelte:head>
 
-<Nav />
+<Nav data={data} />
 {@render children()}
 <Footer />
